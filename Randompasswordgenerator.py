@@ -1,21 +1,23 @@
-#module random
 import random
 
-lower = "abcdefghijklmnopqrstuvwxyz"
+def rpg(length):
+	lower = "abcdefghijklmnopqrstuvwxyz"
 
-upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+	upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
-numbers = "0123456789"
+	numbers = "0123456789"
 
-symbols = "[{}0*;/,._-"
+	symbols = "[{}0*;/,._-"
 
-all = lower + upper + numbers + symbols
-length = int(input('Enter length of password: '))
+	all = lower + upper + numbers + symbols
 
-#length more than 3 because mostly password starts with 4 digit
-if length<=3:
-	print(' Enter password length more than 3')
+	if length<=3:
+		print(' Enter password length more than 3')
  
-else:
-	password = "".join(random.sample(all, length))
-	print("password is : ",password)
+	else:
+		password = "".join(random.sample(all, length))
+		print("password is : ",password)
+
+
+length= int(input('Enter length of password: '))
+rpg(length)
