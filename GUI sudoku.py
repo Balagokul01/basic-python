@@ -1,4 +1,6 @@
-# GUI.py
+# To run this file install pygame module 
+# To install pygame use this code in terminal or cmd pip install pygame
+# To auto solve press space in your keyboard 
 import pygame
 import time
 pygame.font.init()
