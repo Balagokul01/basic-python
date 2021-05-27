@@ -19,5 +19,14 @@ def rpg(length):
 		print("password is : ",password)
 
 
-length= int(input('Enter length of password: '))
-rpg(length)
+while True:
+	length= int(input('\nEnter length of password: '))
+	rpg(length)
+	
+	k=input("\n Do you want to continue(Y)or(N)? : ")
+	if k=='y'and'Y':
+		continue
+	else:
+		
+		print('\nbye')
+		break
