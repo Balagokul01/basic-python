@@ -1,5 +1,7 @@
+#import random module 
 import random
 
+#creating or definning function
 def rpg(length):
 	lower = "abcdefghijklmnopqrstuvwxyz"
 
@@ -10,7 +12,7 @@ def rpg(length):
 	symbols = "[{}0*;/,._-"
 
 	all = lower + upper + numbers + symbols
-
+# accepting value more than 3 because most password are 4 digits
 	if length<=3:
 		print(' Enter password length more than 3')
  
@@ -27,6 +29,5 @@ while True:
 	if k=='y'and'Y':
 		continue
 	else:
-		
 		print('\nbye')
 		break
