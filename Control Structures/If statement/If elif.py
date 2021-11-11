@@ -1,4 +1,4 @@
-#if elif statement
+#if elif statements
 
 x = 3
 if x == 2:
