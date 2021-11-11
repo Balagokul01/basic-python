@@ -1,4 +1,4 @@
-#defining function quick sort and accepting numbers to sort from users
+"""defining function quick sort and accepting numbers to sort from users"""
 
 def quick_sort(collection: list) -> list:
 	
