@@ -6,7 +6,7 @@ def quick_sort(collection: list) -> list:
         return collection
     pivot = collection.pop()  # Use the last element as the first pivot
     greater: List[int] = []  # All elements greater than pivot.
-    lesser: List[int] = []  # All elements less than or equal to pivot
+    lesser: List[int] = []  # All elements less than or equal to pivot.
     for element in collection:
         (greater if element > pivot else lesser).append(element)
     return quick_sort(lesser) + [pivot] + quick_sort(greater)
